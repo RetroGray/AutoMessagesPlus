@@ -4,5 +4,5 @@ name: EZMessager
 author: RetroGray
 api-version: 1.15
 commands:
-  amp:
+  ezm:
     description: Main help command.
