@@ -19,7 +19,6 @@ public class Main extends JavaPlugin {
 		Bukkit.getConsoleSender().sendMessage("=+---------------------------------------+=");
 		Bukkit.getConsoleSender().sendMessage("Enabled AutoMessages");
 		Bukkit.getConsoleSender().sendMessage("Author: RetroGray (www.retrogray.com)");
-		Bukkit.getConsoleSender().sendMessage("Version: 1.0.0");
 		Bukkit.getConsoleSender().sendMessage("=+---------------------------------------+=");
 		this.saveDefaultConfig();
 		

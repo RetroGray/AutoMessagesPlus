@@ -1,8 +1,8 @@
 main: com.retrogray.automessagesplus.Main
-version: BETA
+version: 1.0.0
 name: AutoMessagesPlus
 author: RetroGray
-api-version: 1.13
+api-version: 1.15
 commands:
   amp:
     description: Main help command.
