@@ -27,10 +27,13 @@ public class BaseCommand implements CommandExecutor{
 		if(p.hasPermission("EZM.base")) {
 			if (args.length == 0) {
 				p.sendMessage(Utils.chat("&7[&eEZM&7] Commands:"));
-				p.sendMessage(Utils.chat("&7[&eEZM&7] &e/EZM reload &7- &aReloads the plugin."));
-				p.sendMessage(Utils.chat("&7[&eEZM&7] &e/EZM win &7- &aLlama."));
+				p.sendMessage(Utils.chat("&7[&eEZM&7] &e/ezm reload &7- &aReloads the plugin."));
+				p.sendMessage(Utils.chat("&7[&eEZM&7] &e/ezm win &7- &aLlama."));
 				return true;
 			}
+		} else {
+			p.sendMessage(Utils.chat("&7[&eEZM&7] &cYou don't have permission to use this command!"));
+			return true;
 		}
 		if(p.hasPermission("EZM.reload")) {
 			if(args[0].equalsIgnoreCase("reload")) {
@@ -39,6 +42,9 @@ public class BaseCommand implements CommandExecutor{
 				Bukkit.getConsoleSender().sendMessage("[EZM] Config has been reloaded!");
 				return true;
 			}
+		} else {
+			p.sendMessage(Utils.chat("&7[&eEZM&7] &cYou don't have permission to use this command!"));
+			return true;
 		}
 			if (args[0].equalsIgnoreCase("win")) {
 				p.sendMessage(Utils.chat("&6&lIt really whips the llama's ass"));
